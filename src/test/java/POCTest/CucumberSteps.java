@@ -7,8 +7,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.By;
 
-import cucumber.annotation.en.*;
-import cucumber.runtime.PendingException;
+import cucumber.api.java.en.*;
+//import cucumber.api.PendingException;
 
 public class CucumberSteps {
 	
@@ -39,30 +39,6 @@ public class CucumberSteps {
 		driver.close();
 	}
 	
-	@Given("^I am about to search$")
-	public void I_am_about_to_search() throws Throwable {
-	    // Express the Regexp above with the code you wish you had
-	    throw new PendingException();
-	}
-	
-	@When("^I begin to type my query$")
-	public void I_begin_to_type_my_query() throws Throwable {
-	    // Express the Regexp above with the code you wish you had
-	    throw new PendingException();
-	}
-
-	@Then("^a list of suggestions shuld appear below the search field$")
-	public void a_list_of_suggestions_shuld_appear_below_the_search_field() throws Throwable {
-	    // Express the Regexp above with the code you wish you had
-	    throw new PendingException();
-	}
-
-	@Then("^the suggestions should update as I type$")
-	public void the_suggestions_should_update_as_I_type() throws Throwable {
-	    // Express the Regexp above with the code you wish you had
-	    throw new PendingException();
-	}
-	
 	 private boolean isElementPresent(By by) {
 		 try {
 			 driver.findElement(by);
@@ -73,3 +49,4 @@ public class CucumberSteps {
 	}
 
 }
+
